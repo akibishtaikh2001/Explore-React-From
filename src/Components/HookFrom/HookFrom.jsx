@@ -3,11 +3,12 @@ import useInputField from '../../hooks/UseInputField';
 
 const HookFrom = () => {
     const [name, nameOnChange] = useInputField('');
-    const [email, emailOnChange] = useInputField('')
+    const [email, emailOnChange] = useInputField('');
+    const [password, passwordOnChange] = useInputField('');
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log('submit', name, email);
+        console.log('submit', name, email, password);
     }
 
     return (
@@ -15,7 +16,10 @@ const HookFrom = () => {
             <form onSubmit={handleSubmit} >
               <input defaultValue={name} type="text" onChange={nameOnChange} />  
               <br />
-              <input type="email" defaultValue={email} onChange={emailOnChange} name="" id="" />
+              <input type="email"  onChange={emailOnChange} name=""  />
+              <br />
+              <input type="password" name="" onChange={passwordOnChange} />
+              <br />
               <input type="submit" value="Submit" />
             </form>
         </div>
