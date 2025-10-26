@@ -55,6 +55,6 @@ const ControlledField = () => {
             </p>
         </div>
     );
-};
+}; 
 
 export default ControlledField;    
