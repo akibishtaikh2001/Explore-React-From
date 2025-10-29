@@ -24,4 +24,4 @@ const SimpleFrom = () => {
     );
 };
 
-export default SimpleFrom; 
+export default SimpleFrom;  
