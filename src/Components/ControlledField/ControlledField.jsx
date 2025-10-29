@@ -8,7 +8,7 @@ const ControlledField = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log( name,email, password);
+        console.log(name, email, password);
         if (password.length < 6) {
             setError('6 characters or longer password needed.')
         }
@@ -55,6 +55,6 @@ const ControlledField = () => {
             </p>
         </div>
     );
-};  
+};
 
 export default ControlledField;      
