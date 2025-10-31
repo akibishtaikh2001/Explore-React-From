@@ -23,7 +23,7 @@ const ControlledField = () => {
     }
 
     const handleNameChange = e => {
-        setName(e.target.value)
+        setName(e.target.value);     
     }
 
     const handlePasswordOnChange = e => {
@@ -32,7 +32,7 @@ const ControlledField = () => {
 
 
         if (password.length < 6) {
-            setError('Password must be 6 characters or longer.')
+            setError('Password must be 6 characters or longer.');
         }
         else {
             setError('');
