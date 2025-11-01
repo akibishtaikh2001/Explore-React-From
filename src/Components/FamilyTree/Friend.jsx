@@ -3,7 +3,7 @@ import { MoneyContext } from './FamilyTree';
 
 const Friend = () => {
 
-    const [money, setMoney] =  use(MoneyContext);
+    const [money, ] =  use(MoneyContext);
 
     return (
         <div>
