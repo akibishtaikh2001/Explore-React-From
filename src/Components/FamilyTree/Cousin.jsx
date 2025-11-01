@@ -1,10 +1,14 @@
 import React from 'react';
+import Special from './Special';
 
-const Cousin = ({name}) => {
+const Cousin = ({ name, asset }) => {
     return (
         <div>
             <h3>{name}</h3>
-        </div> 
+            {
+                name === 'Tom Tom' && <Special asset={asset} ></Special>
+            }
+        </div>
     );
 };
 
